@@ -8,16 +8,21 @@
     <title>Botify</title>
   </head>
   <body>
+    <div id="songs">
+      
+    </div>
     <div id="player">
-      <div id="player-info">
-        <img src="https://i.ytimg.com/vi/1Acny8GTKFI/sddefault.jpg?v=61119b45">
-        <span><span class ="song_name" id ="song_name">Another Try</span><br><span class ="artist_name" id ="artist_name">The Happy Fits</span></span>
+      <div id="player-top">
+        <div id="player-info">
+          <img src="" id="cover"><span><span class ="song_name" id ="song_name"></span><br><span class ="artist_name" id ="artist_name"></span></span>
+        </div>
+        <span class="material-symbols-outlined" onclick="togglePlay()" id="play">pause_circle</span>
       </div>
       <input type="range" id="progress" min="0" max="1000" value="0">
     </div>
 
     <div id="navbar">
-      <button class="icon-button" onclick="setSong(2);"><span class="material-symbols-outlined">home</span></button>
+      <button class="icon-button" onclick="setSong(1);"><span class="material-symbols-outlined">home</span></button>
       <button class="icon-button"><span class="material-symbols-outlined">search</span></button>
       <button class="icon-button"><span class="material-symbols-outlined">settings</span></button>
     </div>
