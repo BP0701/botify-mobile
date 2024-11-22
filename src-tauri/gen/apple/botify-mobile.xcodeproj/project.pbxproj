@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009163BD15C4F95F17021D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DCC3A795DE6B76BD348726 /* LaunchScreen.storyboard */; };
+		1881BE1CBDBAABEEC2658D86 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB8500295970C7FFAF1598C /* Metal.framework */; };
+		28C562803317B7B8A128FB38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771808E6B81036C7B7EADC3C /* UIKit.framework */; };
+		949A15B9FE83817840914DF8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855902419986668DF2C40802 /* Security.framework */; };
+		9BF0892557BF8E20E39BD7A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1F1C6A8DA577F3A42286E7 /* Assets.xcassets */; };
+		A837F551E3697C8C8C66F133 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF02FD65196FEB12E2EC614 /* WebKit.framework */; };
+		AB71775E6E1149DCE302EB80 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5B0C60272DBF06CDBF1762 /* MetalKit.framework */; };
+		B7BBEEF8E48813C560940523 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 900AD30FFA2E67B5EC5BFB6E /* main.mm */; };
+		B9D62A649152D83D5A779374 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C195797007EE13EF0C439C9 /* QuartzCore.framework */; };
+		D2476E690C39ADF75FA0BEB9 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB56104E34F4E5BB253B44DF /* libapp.a */; };
+		DB93088C65B42A69DD6D4B99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA278D6F9AA40632EEF62A65 /* CoreGraphics.framework */; };
+		FC0F6CDDDA2B9157F5FD2E27 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 6A153B74DE17E2A0CC3F625E /* assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AF36A165A6A720159841069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1BB8500295970C7FFAF1598C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		2A1F1C6A8DA577F3A42286E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31D5F19F17A9D8970E39E945 /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		3C195797007EE13EF0C439C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4D5B0C60272DBF06CDBF1762 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		56DCC3A795DE6B76BD348726 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DE8D8C5C17105A78A6E2335 /* botify-mobile_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "botify-mobile_iOS.entitlements"; sourceTree = "<group>"; };
+		6A153B74DE17E2A0CC3F625E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		70C46A9965D386B9BA4E17C4 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		771808E6B81036C7B7EADC3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		855902419986668DF2C40802 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		900AD30FFA2E67B5EC5BFB6E /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		A65A09ABE26986842CC553E2 /* botify-mobile_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "botify-mobile_iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA278D6F9AA40632EEF62A65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C41B8201079096ED67009647 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		CFF02FD65196FEB12E2EC614 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DB56104E34F4E5BB253B44DF /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169AF488B65D2BEBD9712413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2476E690C39ADF75FA0BEB9 /* libapp.a in Frameworks */,
+				DB93088C65B42A69DD6D4B99 /* CoreGraphics.framework in Frameworks */,
+				1881BE1CBDBAABEEC2658D86 /* Metal.framework in Frameworks */,
+				AB71775E6E1149DCE302EB80 /* MetalKit.framework in Frameworks */,
+				B9D62A649152D83D5A779374 /* QuartzCore.framework in Frameworks */,
+				949A15B9FE83817840914DF8 /* Security.framework in Frameworks */,
+				28C562803317B7B8A128FB38 /* UIKit.framework in Frameworks */,
+				A837F551E3697C8C8C66F133 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ADB3503BCBFEF15E1578B23 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		194F3D1BCBF61BBF85151728 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				70C46A9965D386B9BA4E17C4 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		462DF642921484A55EA16904 /* botify-mobile_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5DE8D8C5C17105A78A6E2335 /* botify-mobile_iOS.entitlements */,
+				0AF36A165A6A720159841069 /* Info.plist */,
+			);
+			path = "botify-mobile_iOS";
+			sourceTree = "<group>";
+		};
+		58A5AAEDEAB48D4FBDD10B98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA278D6F9AA40632EEF62A65 /* CoreGraphics.framework */,
+				DB56104E34F4E5BB253B44DF /* libapp.a */,
+				1BB8500295970C7FFAF1598C /* Metal.framework */,
+				4D5B0C60272DBF06CDBF1762 /* MetalKit.framework */,
+				3C195797007EE13EF0C439C9 /* QuartzCore.framework */,
+				855902419986668DF2C40802 /* Security.framework */,
+				771808E6B81036C7B7EADC3C /* UIKit.framework */,
+				CFF02FD65196FEB12E2EC614 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F5AC793F352D0F7E62460E0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				31D5F19F17A9D8970E39E945 /* lib.rs */,
+				C41B8201079096ED67009647 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		A34642EE4C1E580529F3A265 /* botify-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				900AD30FFA2E67B5EC5BFB6E /* main.mm */,
+				194F3D1BCBF61BBF85151728 /* bindings */,
+			);
+			path = "botify-mobile";
+			sourceTree = "<group>";
+		};
+		A87EB46B77F54E8F58EB774D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A34642EE4C1E580529F3A265 /* botify-mobile */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AD79555A3FDB7C9D5FEF7873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A65A09ABE26986842CC553E2 /* botify-mobile_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5966B86957EE6F0D8C585A0 = {
+			isa = PBXGroup;
+			children = (
+				6A153B74DE17E2A0CC3F625E /* assets */,
+				2A1F1C6A8DA577F3A42286E7 /* Assets.xcassets */,
+				56DCC3A795DE6B76BD348726 /* LaunchScreen.storyboard */,
+				462DF642921484A55EA16904 /* botify-mobile_iOS */,
+				0ADB3503BCBFEF15E1578B23 /* Externals */,
+				A87EB46B77F54E8F58EB774D /* Sources */,
+				8F5AC793F352D0F7E62460E0 /* src */,
+				58A5AAEDEAB48D4FBDD10B98 /* Frameworks */,
+				AD79555A3FDB7C9D5FEF7873 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B31C3FFAC7F39B89FA5A13D /* botify-mobile_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CDFE53A8828ADBA69C0AD98 /* Build configuration list for PBXNativeTarget "botify-mobile_iOS" */;
+			buildPhases = (
+				1CD4A897BF119E9E184133FC /* Build Rust Code */,
+				9323933D79490625BD49ABB3 /* Sources */,
+				BFC7F8661379DAF6AC549730 /* Resources */,
+				169AF488B65D2BEBD9712413 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "botify-mobile_iOS";
+			productName = "botify-mobile_iOS";
+			productReference = A65A09ABE26986842CC553E2 /* botify-mobile_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D625FC659D4FD9F4B22271FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 9CC2FE1B569E6B1681C097CC /* Build configuration list for PBXProject "botify-mobile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F5966B86957EE6F0D8C585A0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B31C3FFAC7F39B89FA5A13D /* botify-mobile_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC7F8661379DAF6AC549730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF0892557BF8E20E39BD7A9 /* Assets.xcassets in Resources */,
+				009163BD15C4F95F17021D8B /* LaunchScreen.storyboard in Resources */,
+				FC0F6CDDDA2B9157F5FD2E27 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CD4A897BF119E9E184133FC /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "npm run -- tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9323933D79490625BD49ABB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BBEEF8E48813C560940523 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		005E6B6A8C809588B0EE3337 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "botify-mobile_iOS/botify-mobile_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "botify-mobile_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.botify-mobile.app;
+				PRODUCT_NAME = "botify-mobile";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+		3471AB5763D86AD4E1BAED4A /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		5AE0AA75EA18226EC61014C3 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "botify-mobile_iOS/botify-mobile_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "botify-mobile_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.botify-mobile.app;
+				PRODUCT_NAME = "botify-mobile";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		BD05D84234CE4F54D0AE742A /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CDFE53A8828ADBA69C0AD98 /* Build configuration list for PBXNativeTarget "botify-mobile_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE0AA75EA18226EC61014C3 /* debug */,
+				005E6B6A8C809588B0EE3337 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		9CC2FE1B569E6B1681C097CC /* Build configuration list for PBXProject "botify-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3471AB5763D86AD4E1BAED4A /* debug */,
+				BD05D84234CE4F54D0AE742A /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D625FC659D4FD9F4B22271FE /* Project object */;
+}

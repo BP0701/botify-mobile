@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <title>Botify</title>
+  </head>
+  <body>
+    <div id="player">
+      <div id="player-info">
+        <img src="https://i.ytimg.com/vi/1Acny8GTKFI/sddefault.jpg?v=61119b45">
+        <span><span class ="song_name" id ="song_name">Another Try</span><br><span class ="artist_name" id ="artist_name">The Happy Fits</span></span>
+      </div>
+      <input type="range" id="progress" min="0" max="1000" value="0">
+    </div>
+
+    <div id="navbar">
+      <button class="icon-button" onclick="setSong(2);"><span class="material-symbols-outlined">home</span></button>
+      <button class="icon-button"><span class="material-symbols-outlined">search</span></button>
+      <button class="icon-button"><span class="material-symbols-outlined">settings</span></button>
+    </div>
+  </body>
+  <script src="player.js"></script>
+  <script src="index.js"></script>
+</html>
