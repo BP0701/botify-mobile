@@ -8,8 +8,6 @@ player = document.getElementById("player");
 
 
 
-localStorage.setItem("password", "test"); //TODO change that!
-localStorage.setItem("username", "test");
 localStorage.setItem("url", "http://127.0.0.1:4000");
 
 password = localStorage.getItem("password");
@@ -81,7 +79,46 @@ function setSong(id) {
     .then(response => response.json())
     .then(data => {
         current_song = data;
-        current_audio = new Audio(url + current_song.url);
+        fetch(`${url}/api/audio/${id}`, {
+            "headers": {
+              "authorization": "Basic "+window.btoa(`${username}:${password}`),
+            },
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "body": null,
+            "method": "GET",
+            "mode": "cors",
+            "credentials": "include"
+          }).then((response) => {
+            const reader = response.body.getReader();
+            return new ReadableStream({
+              start(controller) {
+                return pump();
+                function pump() {
+                  return reader.read().then(({ done, value }) => {
+                    // When no more data needs to be consumed, close the stream
+                    if (done) {
+                      controller.close();
+                      return;
+                    }
+                    // Enqueue the next data chunk into our target stream
+                    controller.enqueue(value);
+                    return pump();
+                  });
+                }
+              },
+            });
+          })
+          // Create a new response out of the stream
+          .then((stream) => new Response(stream))
+          // Create an object URL for the response
+          .then((response) => response.blob())
+          .then((blob) => URL.createObjectURL(blob))
+          // Update image
+          .then((url) => {
+            current_audio = new Audio(url);
+            play()
+          })
+        
         
         document.getElementById("cover").src = current_song.cover;
         document.getElementById("artist_name").innerHTML = current_song.artist;
@@ -89,7 +126,6 @@ function setSong(id) {
         
         player.style.visibility = "visible";
 
-        console.log(current_song);
-        play();
+        document.title = current_song.song;
     });
 }

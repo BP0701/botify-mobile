@@ -1,32 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-    <title>Botify</title>
-  </head>
-  <body>
-    <div id="songs">
-      
-    </div>
-    <div id="player">
-      <div id="player-top">
-        <div id="player-info">
-          <img src="" id="cover"><span><span class ="song_name" id ="song_name"></span><br><span class ="artist_name" id ="artist_name"></span></span>
-        </div>
-        <span class="material-symbols-outlined" onclick="togglePlay()" id="play">pause_circle</span>
-      </div>
-      <input type="range" id="progress" min="0" max="1000" value="0">
-    </div>
-
-    <div id="navbar">
-      <button class="icon-button" onclick="setSong(1);"><span class="material-symbols-outlined">home</span></button>
-      <button class="icon-button"><span class="material-symbols-outlined">search</span></button>
-      <button class="icon-button"><span class="material-symbols-outlined">settings</span></button>
-    </div>
-  </body>
-  <script src="player.js"></script>
-  <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        input {
+            background-color: rgb(50, 50, 50);
+            border-style: none;
+            border-radius: 10px;
+            width: 80vw;
+            height: 5vh;
+            color: white;
+            margin-top: 3vh;
+            margin-inline: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Botify - Login</h1>
+    <form action="">
+        <input type="text" placeholder="Username" id="username"> <br>
+        <input type="password" placeholder="Password" id="password"> <br>
+        <input type="button" value="Login" onclick="setCredentials()">
+    </form>
+</body>
+<script src="util.js"></script>
+<script src="index.js"></script>
 </html>

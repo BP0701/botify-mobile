@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <title>Settings</title>
+    <style>
+        .button {
+            background-color: rgb(50, 50, 50);
+            border-style: none;
+            border-radius: 10px;
+            width: 80vw;
+            height: 5vh;
+            color: white;
+            margin-top: 3vh;
+            margin-inline: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Logout" onclick="logout()" class="button">
+    <div id="navbar">
+        <button class="icon-button" onclick="window.location.replace('main.html')"><span class="material-symbols-outlined">home</span></button>
+        <button class="icon-button" onclick="window.location.replace('search.html')"><span class="material-symbols-outlined">search</span></button>
+        <button class="icon-button" onclick="window.location.replace('settings.html')"><span class="material-symbols-outlined">settings</span></button>
+      </div>
+</body>
+<script src="util.js"></script>
+</html>

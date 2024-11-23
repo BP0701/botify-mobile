@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="songs">
+      
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div id="player">
+      <div id="player-top">
+        <div id="player-info">
+          <img src="" id="cover"><span><span class ="song_name" id ="song_name"></span><br><span class ="artist_name" id ="artist_name"></span></span>
+        </div>
+        <span class="material-symbols-outlined" onclick="togglePlay()" id="play">pause_circle</span>
+      </div>
+      <input type="range" id="progress" min="0" max="1000" value="0">
+    </div>
+
+    <div id="navbar">
+      <button class="icon-button" onclick="window.location.replace('main.html')"><span class="material-symbols-outlined">home</span></button>
+      <button class="icon-button" onclick="window.location.replace('search.html')"><span class="material-symbols-outlined">search</span></button>
+      <button class="icon-button" onclick="window.location.replace('settings.html')"><span class="material-symbols-outlined">settings</span></button>
+    </div>
+  </body>
+  <script src="player.js"></script>
+  <script src="main.js"></script>
+</html>
