@@ -6,10 +6,6 @@ playing = false;
 player_info = document.getElementById("player-info");
 player = document.getElementById("player");
 
-
-
-localStorage.setItem("url", "http://127.0.0.1:4000");
-
 password = localStorage.getItem("password");
 username = localStorage.getItem("username");
 url = localStorage.getItem("url");

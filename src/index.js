@@ -1,3 +1,7 @@
+if (localStorage.getItem("url") == null){
+    localStorage.setItem("url", "http://127.0.0.1:4000");
+}
+
 if (localStorage.getItem("password") != null && localStorage.getItem("username") != null){
     window.location.replace("main.html");
 }
